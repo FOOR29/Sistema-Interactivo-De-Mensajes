@@ -1,0 +1,43 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-image: url(/Sistema-Interactivo-De-Mensajes/src/img/back.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+main {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vh;
+    margin-top: 22vh;
+}
+
+form {
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    padding: 3vh 2vh 3vh 2vh;
+}
+
+
+
+/* mensaje de resultado */
+#result {
+    background-color: blue;
+    height: 4vh;
+    width: 10vw;
+}
+
+
+
