@@ -5,39 +5,92 @@
 }
 
 body {
-    /* background-image: url(/Sistema-Interactivo-De-Mensajes/src/img/back.gif);
+    background-image: url(/Sistema-Interactivo-De-Mensajes/src/img/back.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center; */
+    background-position: center;
+    min-height: 100dvh;
+    backdrop-filter: blur(14px);
+    box-shadow: ;
 }
 
 main {
-    background-color: red;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 5vh;
-    margin-top: 22vh;
+    padding-top: 31vh;
 }
 
 form {
-    background-color: green;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    background-color: rgba(0, 0, 0, .23);
+    display: flex; justify-content: center;
+    align-items: center; flex-direction: column;
     gap: 10px;
     padding: 3vh 2vh 3vh 2vh;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, .20);
 }
 
-
-
-/* mensaje de resultado */
-#result {
-    background-color: blue;
-    height: 4vh;
-    width: 10vw;
+/*diseño de name y age*/
+input::placeholder {
+    color: #fff;
 }
+
+.name{
+    margin-bottom: 2vh;
+    display: flex; align-items: center;
+    gap: 13px;
+}
+
+.name input {
+    font-size: 17px; padding: 1vh;
+    border-radius: 8px; border: none;
+    background-color: rgba(255, 255, 255, .20);
+}
+
+.name i {
+    font-size: 28px;
+    color: #fff;
+}
+
+.age {
+    margin-bottom: 2vh;
+    display: flex; align-items: center;
+    gap: 13px;
+}
+
+.age input {
+    font-size: 17px; padding: 1vh;
+    border-radius: 8px; border: none;
+    background-color: rgba(255, 255, 255, .20);
+}
+
+.age i {
+    font-size: 28px;
+    color: #fff;
+}
+
+/*diseño boton*/
+#button {
+    font-size: .9vw; padding: .3vh 2vh .3vh 2vh;
+    border: none; border-radius: 5px;
+    margin-bottom: 1vh; font-family: sans-serif;
+    font-weight: 600; color: #fff;
+    background-color: rgba(255, 255, 255, .20);
+}
+
+/* mensaje de resultado diseño*/
+#result { 
+    background-color: rgba(0, 0, 0, .35);
+    height: 4vh; width: 14vw;
+    border-radius: 9px;
+    display: flex; justify-content: center;
+    align-items: center; font-family: sans-serif;
+    font-weight: 700; color: #fff;
+}
+
+/*animaciones*/
 
 
 
