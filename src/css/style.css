@@ -95,9 +95,12 @@ input::placeholder {
     background-color: rgba(0, 0, 0, .35);
     height: 4vh; width: 14vw;
     border-radius: 9px;
+    font-size: .8vw;
+    padding: 3vh 0vh 3vh 0;
     display: flex; justify-content: center;
     align-items: center; font-family: sans-serif;
     font-weight: 700; color: #fff;
+    text-align: center;
 }
 
 /*animaciones*/
