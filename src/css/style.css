@@ -13,13 +13,30 @@ body {
     backdrop-filter: blur(14px);
 }
 
+header {
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5vh;
+    color: #fff;
+}
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5vh;
+    font-family: sans-serif;
+    color: #fff;
+}
 form {
     background-color: rgba(0, 0, 0, .23);
     display: flex; justify-content: center;
@@ -114,5 +131,81 @@ input::placeholder {
 
 #button:hover {
     transform: scale(1.1);
+}
+
+/*responsive*/
+/* 📱 Teléfonos */
+@media (max-width: 480px) {
+    form {
+        width: 90%;
+        font-size: 14px;
+        padding: 2vh;
+    }
+
+    .name, .age {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .name i, .age i {
+        font-size: 20px;
+    }
+
+    .name input, .age input {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    #button {
+        font-size: 13px;
+        padding: 5px 15px;
+    }
+
+    #result {
+        font-size: 12px;
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    header h2 {
+        font-size: 18px;
+        text-align: center;
+        padding: 2vh;
+    }
+
+    main {
+        height: auto;
+        padding: 5vh 0;
+    }
+}
+
+/* Tabletas */
+@media (max-width: 768px) {
+    form {
+        width: 70%;
+        font-size: 16px;
+        padding: 2.5vh;
+    }
+
+    .name input, .age input {
+        font-size: 16px;
+    }
+
+    #button {
+        font-size: 14px;
+        padding: 7px 20px;
+    }
+
+    #result {
+        font-size: 13px;
+        width: 100%;
+        padding: 10px;
+    }
+
+    header h2 {
+        font-size: 22px;
+        text-align: center;
+    }
 }
 
